@@ -1,0 +1,81 @@
+Detailed Website Prompt
+Project Overview:
+You are tasked with creating a modern, interactive, and scalable web platform built with Vite and React JSX for a school project, with the potential to expand into a broader community tool. The website will leverage Supabase for authentication and data management, OpenAI API for AI-driven features, and cookies for user preferences. The platform is designed for students, teachers, and educational enthusiasts to create, share, and engage with content while fostering a vibrant community.
+
+Tech Stack:
+
+Frontend: Vite + React JSX (for fast development and modern UI).
+Backend/Database: Supabase (for authentication, user data, and post storage).
+AI Integration: OpenAI API (for AI chat functionality).
+Cookies: For user preferences (e.g., cookie consent, theme settings).
+SEO & OpenGraph: For public pages and user-generated content sharing.
+Core Features:
+
+Pages & Structure:
+Public Pages (SEO-enabled):
+https://example.com/ (Home): Welcomes users, showcases trending posts, and highlights key features.
+https://example.com/about: Details the platform’s mission, team (you/class), and vision.
+https://example.com/contact: A form for inquiries with email integration via Supabase.
+https://example.com/faq: Answers common questions about usage, accounts, and policies.
+https://example.com/terms: Terms of service and privacy policy.
+Account Pages:
+https://example.com/accounts/signup: User registration with username, email, password, and confirm password fields. Handled by Supabase with email verification.
+https://example.com/accounts/login: Login with email and password, managed by Supabase.
+https://example.com/account/edit: Profile editing page (post-verification) with fields: profile image, display name, subjects (from a JSON file), school, educational level (e.g., high school, college), role (teacher/student), age, class, bio, and options to update email/password.
+https://example.com/account/new: Post creation page.
+https://example.com/view/user: Public user profile view (dynamic based on username or ID).
+Dynamic Keys: Use URL parameters or Supabase queries to fetch page-specific data (e.g., user profiles, posts).
+User Authentication:
+Supabase handles signup, login, and email verification.
+After signup, users receive a verification email. Only verified users can edit profiles or create posts.
+Store user data securely in Supabase tables (e.g., users, profiles).
+Post Creation & Management:
+Post Types: Text, images, embeds (YouTube, etc.), and links.
+Advanced Editor: A rich text editor with:
+Text: Color, font style (e.g., Google Fonts), size, alignment.
+Images: Resize, crop, and caption options.
+Embeds/Links: Preview generation and styling.
+Post Fields:
+Title (required).
+Content (via advanced editor).
+Visibility (public, private, followers-only).
+Contributors (optional, tag other users).
+Subject tags (from JSON file).
+Post Stats: Views, likes, shares, and saves (stored in Supabase).
+SEO & OpenGraph: Each public post gets a unique URL (e.g., https://example.com/post/[id]) with meta tags (title, description, image) for sharing on social media.
+Social Features:
+Share: Button to share posts/users via URL or social media.
+Like: One-click like button with real-time count.
+Follow: Follow users to see their posts in a feed.
+Save: Bookmark posts for later viewing (stored in Supabase).
+AI Chat:
+Accessible via a dedicated page or widget (e.g., https://example.com/chat).
+Powered by OpenAI API for natural conversations.
+Messages (sent/received) saved in a JSON file or Supabase table for persistence.
+Use case: Help with homework, brainstorming post ideas, or casual chat.
+Search Functionality:
+Search bar on the home page to find posts, users, or subjects.
+Filters: By subject, visibility, popularity (likes/views), or date.
+Powered by Supabase queries or an indexed search solution (e.g., Algolia, if scaled).
+Cookies & Consent:
+Popup on first visit asking for cookie consent (accept/decline).
+Store consent in cookies and check it for analytics or personalized features (e.g., dark mode).
+UI/UX Features:
+Responsive Design: Mobile-first approach with Tailwind CSS or similar.
+Dark/Light Mode: Toggle based on user preference (saved in cookies).
+Animations: Subtle transitions (e.g., page loads, button clicks) using Framer Motion.
+Profile Badges: Earn badges for milestones (e.g., 10 posts, 100 likes).
+Feed: A dynamic feed on the home page showing followed users’ posts or trending content.
+Additional Ideas:
+Gamification: Points system for posting, liking, or contributing (redeemable for profile flair).
+Collaborative Posts: Allow multiple users to co-author a post in real-time (Supabase Realtime).
+Subject Leaderboards: Rank users by activity within subjects (e.g., “Top Math Contributors”).
+Notifications: Email or in-app alerts for likes, follows, or new followers’ posts.
+Analytics Dashboard: For users to see their post performance (views, likes, etc.).
+Requirements for Success:
+Supabase Setup: Configure authentication, database tables (users, posts, profiles, chat), and storage (for images).
+OpenAI API Key: Securely integrate and manage API calls (rate limits, cost monitoring).
+JSON Files: Create subjects.json with a list (e.g., Math, Science, History) and host it locally or in Supabase.
+Security: Validate inputs, sanitize content, and use HTTPS.
+Performance: Optimize images and lazy-load content for speed.
+Scalability: Plan for increased traffic (e.g., CDN for static assets, Supabase scaling).

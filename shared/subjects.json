@@ -1,0 +1,62 @@
+[
+  {
+    "id": "math",
+    "name": "Mathematics",
+    "color": "bg-accent-500"
+  },
+  {
+    "id": "cs",
+    "name": "Computer Science",
+    "color": "bg-primary-500"
+  },
+  {
+    "id": "physics",
+    "name": "Physics",
+    "color": "bg-blue-500"
+  },
+  {
+    "id": "chemistry",
+    "name": "Chemistry",
+    "color": "bg-secondary-500"
+  },
+  {
+    "id": "literature",
+    "name": "Literature",
+    "color": "bg-green-500"
+  },
+  {
+    "id": "biology",
+    "name": "Biology",
+    "color": "bg-yellow-500"
+  },
+  {
+    "id": "history",
+    "name": "History",
+    "color": "bg-orange-500"
+  },
+  {
+    "id": "geography",
+    "name": "Geography",
+    "color": "bg-teal-500"
+  },
+  {
+    "id": "art",
+    "name": "Art & Design",
+    "color": "bg-purple-500"
+  },
+  {
+    "id": "music",
+    "name": "Music",
+    "color": "bg-pink-500"
+  },
+  {
+    "id": "languages",
+    "name": "Languages",
+    "color": "bg-indigo-500"
+  },
+  {
+    "id": "philosophy",
+    "name": "Philosophy",
+    "color": "bg-rose-500"
+  }
+]
